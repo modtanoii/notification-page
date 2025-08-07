@@ -3,60 +3,66 @@ import React from 'react'
 const notification = () => {
   return (
     <div>
-        <main className='bg-blue-50 h-full p-4'>
-            <div className='container mx-auto p-4 bg-white rounded-xl w-xl'>
+        <main className='bg-gray-100 h-full md:p-2 font-jakarta'>
+            <div className='container mx-auto p-4 md:p-8 bg-white rounded-xl md:w-2xl'>
                 <div className='flex items-center justify-between'>
-                    <h1 className='text-2xl font-bold font-plus-jakarta'>Notifications</h1>
-                    Mark all as read
+                    <div className='flex items-center gap-2'>
+                        <h1 className='text-[20px] font-bold'>Notifications</h1>
+                        <div className='rounded-md bg-blue-900 px-3 font-bold text-white'>3</div>
+                    </div>
+                    <p className='text-[15px]'>Mark all as read</p>
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-mark-webber.webp" alt="" />
-                    <div>
-                        Mark Webber reacted to your recent post My first tournament today!
-                        <span>1m ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-4 md:mt-8'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-mark-webber.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Mark Webber </span>reacted to your recent post <span className='font-bold'>My first tournament today!</span>
+                        <p className='text-gray-400'>1m ago</p>
                     </div>
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-angela-gray.webp" alt="" />
-                    <div>
-                        Angela Gray followed you
-                        <span>5m ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-angela-gray.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Angela Gray</span> followed you
+                        <p className='text-gray-400'>5m ago</p>
                     </div>
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-jacob-thompson.webp" alt="" />
-                    <div>
-                        Jacob Thomson has joined your group Chess Club
-                        <span>1day ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-jacob-thompson.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Jacob Thomson</span> has joined your group Chess Club
+                        <p className='text-gray-400'>1day ago</p>
                     </div>
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" />
-                    <div>
-                        Rizky Hassanuddin sent you a provate message
-                        <span>5days ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Rizky Hassanuddin</span> sent you a provate message
+                        <p className='text-gray-400'>5days ago</p>
+                        <div className='container bg-blue-100 rounded-md p-4 my-2'>
+                            Hello, thanks for setting up the Chess club. I've been a member for a  few weeks now and I'm already having lots of fun and improving my game.
+                        </div>
                     </div>
                 </div>
-                <div className='container flex justify-between bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-kimberly-smith.webp" alt="" />
-                    <div>
-                        Kimberly Smith commented on your picture
-                        <span>1week ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-kimberly-smith.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Kimberly Smith</span> commented on your picture
+                        <p className='text-gray-400'>1week ago</p>
                     </div>
                     <img className='w-12 h-12 p-2' src="/assets/images/image-chess.webp" alt="" />
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-nathan-peterson.webp" alt="" />
-                    <div>
-                        Nathan Peterson reacted to your recent post 5 end-game strategies to Increase your win rate
-                        <span>2weeks ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-nathan-peterson.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Nathan Peterson</span> reacted to your recent post 5 end-game strategies to Increase your win rate
+                        <p className='text-gray-400'>2weeks ago</p>
                     </div>
                 </div>
-                <div className='container flex bg-blue-50 rounded-sm p-2 mt-2'>
-                    <img className='w-14 h-14 p-1' src="/assets/images/avatar-anna-kim.webp" alt="" />
-                    <div>
-                        Anna Kim left the group Chess Club
-                        <span>2weeks ago</span>
+                <div className='container flex bg-gray-100 rounded-sm p-3 mt-3'>
+                    <img className='w-12 h-12 mr-4' src="/assets/images/avatar-anna-kim.webp" alt="" />
+                    <div className='text-[15px]'>
+                        <span className='font-bold' id='name'>Anna Kim</span> left the group Chess Club
+                        <p className='text-gray-400'>2weeks ago</p>
                     </div>
                 </div>
             </div>
